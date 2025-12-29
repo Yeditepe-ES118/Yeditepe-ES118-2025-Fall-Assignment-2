@@ -10,10 +10,10 @@
 #+LATEX_HEADER: \usepackage{amsmath}
 
 A file called ~populations.txt~ is present in this assignment repo. Your aim is to do some operations using the data in ~populations.txt~ file. For that purpose, write a new function called ~stat~ in a Python file called ~assignment2.py~. This function will do the following things;
-1. loads the ~populations.txt~ into ~data~ variable
-2. extracts the Hare column and puts it into a variable called ~hare~
+1. loads the ~populations.txt~ into ~data~ variable (use ~np.loadtxt~)
+2. extracts the Hare column and puts it into a variable called ~hare~ (use slicing)
 3. finds the year when the ~hare~ population is the lowest and puts it into a variable called ~min_year_hare~ (use ~np.argmin~)
-4. finds the average of the Lynx population over years and assigns it to a new variable called ~lynx_avg~  
+4. finds the average of the Lynx population over years and assigns it to a new variable called ~lynx_avg~ (use slicing and ~np.mean~)
 5. creates a ~new_data~ array which stores ~data~ and adds a last column where each row entry corresponds to the sum of all species at the corresponding year
 6. makes the Carrot population below 40000 to 0 in ~new_data~
 7. it finally returns ~data~, ~hare~, ~min_year_hare~, ~lynx_avg~, ~new_data~
