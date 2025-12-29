@@ -20,4 +20,4 @@ A file called ~populations.txt~ is present in this assignment repo. Your aim is 
 
 Use NumPy functions, do not enter or modify entries manually using ~np.array~ and do not use loops.
 
-Due date: 05.01.2025 23:00
+Due date: 05.01.2026 23:00
