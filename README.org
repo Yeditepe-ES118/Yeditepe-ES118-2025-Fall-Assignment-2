@@ -10,16 +10,12 @@
 #+LATEX_HEADER: \usepackage{amsmath}
 
 A file called ~populations.txt~ is present in this assignment repo. Your aim is to do some operations using the data in ~populations.txt~ file. For that purpose, write a new function called ~stat~ in a Python file called ~assignment2.py~. This function will do the following things;
-- loads the ~populations.txt~ into ~data~ variable
-- extracts the Hare column and puts it into a variable called ~hare~
-- finds the year when the ~hare~ population is the lowest and puts it into a variable called ~min_year_hare~ (use ~np.argmin~)
-- finds the average of the Lynx population over years and assigns it to a new variable called ~lynx_avg~  
-- copies ~data~ array into a new variable called ~data_v2~ (use ~np.copy~ for copying)
-- adds a new column to ~data_v2~;
-  + each row entry corresponds to the sum of all species at the corresponding year
-  + after, makes the Carrot population below 40000 to 0 in ~new_data~
-- it finally returns ~data~, ~hare~, ~min_year_hare~, ~lynx_avg~, ~new_data~
+1. loads the ~populations.txt~ into ~data~ variable
+2. extracts the Hare column and puts it into a variable called ~hare~
+3. finds the year when the ~hare~ population is the lowest and puts it into a variable called ~min_year_hare~ (use ~np.argmin~)
+4. finds the average of the Lynx population over years and assigns it to a new variable called ~lynx_avg~  
+5. creates a ~new_data~ array which stores ~data~ and adds a last column where each row entry corresponds to the sum of all species at the corresponding year
+6. makes the Carrot population below 40000 to 0 in ~new_data~
+7. it finally returns ~data~, ~hare~, ~min_year_hare~, ~lynx_avg~, ~new_data~
 
 Use NumPy functions, do not enter or modify entries manually using ~np.array~ and do not use loops.
-  
-
